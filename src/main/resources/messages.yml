@@ -1,0 +1,35 @@
+# plugin messages can be edited here
+Messages:
+  HELP_MESSGAGE:
+    - "&a ======= &3PlayerNotify Help &a======="
+    - "&a  /pnreload: &3reloads configuration"
+    - "&a  /togglemessages: &3toggles notification messages on or off"
+    - "&a ======= &3PlayerNotify-1.0.1 &a======"
+
+  GENERAL:
+    PREFIX: "&6[&bPlayerNotify&6]&r"
+    CONFIG_RELOAD: "%prefix% &aall configurations have been reloaded."
+    NO_PERMISSION: "%prefix% &cYou do not have permission to perform this action."
+
+  COMMAND:
+    NO_PERMISSION: "%prefix% &cYou do not have permission to use this command."
+    NOT_FOUND: "%prefix% &cCommand does not exist."
+    TOGGLEMESSAGES_ON: "%prefix% &ePlayer join/leave/switch notifications toggled &aon&e."
+    TOGGLEMESSAGES_OFF: "%prefix% &ePlayer join/leave/switch notifications toggled &coff&e."
+    IN_GAME_ONLY: "%prefix% &4You can only do that in game."
+
+  EVENT:
+    # Network Join Message
+    # This message is displayed when a player joins the network.
+    # Placeholders available: %player%, %lp_prefix%, %lp_suffix%, %server%, %time%.
+    JOIN: "&8[&7%time%&8] [&a↑&8] &b%player%"
+
+    # Servers Switch Message
+    # This message is displayed when a player switches to a different server.
+    # Placeholders available: %player%, %last_server%, %server%, %time%, %lp_prefix%, %lp_suffix%
+    SWITCH: "&8[&7%time%&8] &b%player% switched from %last_server% to %server%"
+
+    # Network Leave Message
+    # This message is displayed when a player leaves the network.
+    # Placeholders available: %player%, %lp_prefix%, %lp_suffix%, %last_server%, %time%.
+    LEAVE: "&8[&7%time%&8] [&7↓&8] &b%player%"

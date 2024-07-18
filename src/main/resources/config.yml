@@ -1,0 +1,28 @@
+# notifications will not be sent to players that are in these servers.
+disabled-servers:
+  - "example-1"
+  - "other-backend-server"
+
+# notifications about these servers will not be sent.
+private-servers:
+  - "sample-1"
+  - "private-server"
+
+# Disable messages for vanished players (Currently supports SuperVanish/PremiumVanish)
+respect-vanish: true
+
+# Define custom server display names here.
+# Players can join/leave/switch to the server using the custom names specified below.
+servers:
+  - "example:Example-1"
+  - "lobby:&aLobby"
+
+# optional permission settings
+permission:
+  # Notify Messages
+  # If this is true and the player doesn't have playernotify.notify permission, then their join/leave/message will not be sent.
+  notify_message: false
+
+  # Hide Messages
+  # If this is true and the player doesn't have playernotify.view permission, then they won't see the others' join/switch/leave messages.
+  hide_message: false
